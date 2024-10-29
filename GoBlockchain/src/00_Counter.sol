@@ -12,3 +12,7 @@ contract Counter {
         number++;
     }
 }
+
+// forge build && forge test -vv, para compila e executar
+//forge test -vv --match-path test/01_PersonalStorange.t.sol , testa 1 unico arquivo
+//

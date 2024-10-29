@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import {Test, console} from "forge-std/Test.sol";
-import {Counter} from "../src/Counter.sol";
+import {Counter} from "../src/00_Counter.sol";
 
 contract CounterTest is Test {
     Counter public counter;
@@ -22,3 +22,13 @@ contract CounterTest is Test {
         assertEq(counter.number(), x);
     }
 }
+
+
+/**
+Para executar os testes, execute o comando abaixo:
+forge build && forge test 00_Counter.t.sol -vv
+ou 
+forge build
+forge test 00_Counter.t.sol com ou sem paramentro (-vv)
+
+*/
