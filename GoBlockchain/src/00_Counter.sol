@@ -12,7 +12,18 @@ contract Counter {
         number++;
     }
 }
+/*
+Baixe e instale o Foundry
+Para baixar e instalar o Foundry, você pode usar o comando abaixo:
+- curl -L https://foundry.paradigm.xyz | bash
 
-// forge build && forge test -vv, para compila e executar
-//forge test -vv --match-path test/01_PersonalStorange.t.sol , testa 1 unico arquivo
-//
+Após instalar, você precisa inicializar o Foundry para baixar as ferramentas:
+- foundryup
+
+Verifique a instalação
+- forge --version
+
+Para conpilar e rodar o teste
+- forge build && forge test -vv, para compila e executar
+- forge test -vv --match-path test/01_PersonalStorange.t.sol , testa 1 unico arquivo
+*/
