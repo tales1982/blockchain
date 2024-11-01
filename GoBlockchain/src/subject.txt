@@ -118,3 +118,10 @@ proprietário do contrato.
 Lembre-se de validar os dados de entrada, como verificar se a quantidade é maior que zero e se o 
 ID do pedido existe antes de atualizar ou recuperar informações.
 ===================================================================================================
+Exercicio 08
+Desenvolvar um smart contract que seja capaz de armazena um nome, idade, nacionalidade, notas, stados escolar  
+de uma pessoa brasileira.
+Os dados das pessoas deveran ser "" para o nome, 0 para idade, true para nacionalidade brasileira, 0 para notas e Udefine pra stado escolar.
+O smart contract deve ser capaz, ainda de associar a pessoa, o estado da sua condicao escolar
+a saber : Aprovado , Reprovado, Zero ou Undefined.
+===================================================================================================

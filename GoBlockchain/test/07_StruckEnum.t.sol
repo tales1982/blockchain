@@ -34,6 +34,8 @@ contract OrderManagerTest is Test {
         orderManager.addOrder(productName, quantity);
 
         // Update the status of the order
+        // As the contract owner, we should be able to update the status
+        vm.prank(orderManager.owner()); // Ensures that only the owner can update status
         orderManager.updateStatus(0, OrderManager.OrderStatus.Shipped);
 
         // Retrieve the updated order
@@ -43,14 +45,14 @@ contract OrderManagerTest is Test {
         assertEq(uint(status), uint(OrderManager.OrderStatus.Shipped));
     }
 
-    function test3PrintOrder() public {
-        // Add an order to test printOrder
+    function test3GetOrder() public {
+        // Add an order to test getOrder
         string memory productName = "Laptop";
         uint256 quantity = 10;
         orderManager.addOrder(productName, quantity);
 
-        // Retrieve the order using printOrder function
-        OrderManager.Order memory order = orderManager.printOrder(0);
+        // Retrieve the order using getOrder function
+        OrderManager.Order memory order = orderManager.getOrder(0);
 
         // Check if the order details match
         assertEq(order.orderId, 0);
@@ -58,5 +60,19 @@ contract OrderManagerTest is Test {
         assertEq(order.quantity, quantity);
         assertEq(order.clientId, address(this)); // Should be the test contract's address
         assertEq(uint(order.status), uint(OrderManager.OrderStatus.Pending));
+    }
+
+    function test4ListClientOrders() public {
+        // Add two orders for the same client (test contract)
+        orderManager.addOrder("Laptop", 5);
+        orderManager.addOrder("Phone", 3);
+
+        // Retrieve the list of orders for the client
+        uint[] memory clientOrderIds = orderManager.listClientOrders(address(this));
+
+        // Check that the client has two orders and IDs match
+        assertEq(clientOrderIds.length, 2);
+        assertEq(clientOrderIds[0], 0);
+        assertEq(clientOrderIds[1], 1);
     }
 }

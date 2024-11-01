@@ -13,7 +13,7 @@ contract GradeBookTest is Test {
     }
 
     // Teste para verificar que o valor inicial de um aluno sem notas é um array vazio
-    function testInitialValue() public {
+    function testInitialValue() public view {
         uint8[] memory grades = gradeBook.getGrades("Alice");
         console.log("Initial grades length:", grades.length); // Log do comprimento do array
         assertEq(grades.length, 0, "Initial grade array should be empty");
