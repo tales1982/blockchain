@@ -37,15 +37,7 @@
   Exercicio 04 
   Desenvolva um smart contract estitamente matematico que calcule o
   resultado do factorial de um numero N.
- ===================================================================================================
-  Exercício: 05
-  Crie um contrato chamado GradeBook que funcione como um registro de notas para estudantes. 
-  Ele deve permitir adicionar e acessar notas de cada estudante.
-
-  Requisitos:
-  Adicionar Notas:
-
-   - Crie uma função addGrade que permite registrar a nota de um estudante. 
+ ==================================09_01_ImportContract.sol permite registrar a nota de um estudante. 
      Cada estudante é identificado string.
    - Armazene as notas em um array para cada estudante.
    - Visualizar Notas:
@@ -125,3 +117,8 @@ Os dados das pessoas deveran ser "" para o nome, 0 para idade, true para naciona
 O smart contract deve ser capaz, ainda de associar a pessoa, o estado da sua condicao escolar
 a saber : Aprovado , Reprovado, Zero ou Undefined.
 ===================================================================================================
+Exercicio 09
+Crie um contrato (I) com as funcoes aritimeticas, depois um outro arquivo-fonte.
+Crie uma biblioteca (II) que implemente as operacoes matematicas do contrato (I)
+Por fim crie um terceiro smart contract em um arquivo fonte distinto para que seja 
+possivel invocar as fucionalidades de cada um dos arquivos fontes, criado antes (I , II)
