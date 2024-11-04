@@ -12,17 +12,22 @@ contract MainTest is Test {
         main = new Main();
     }
 
-    function test1Result() public view {
-        int expectedSun = 50;
-        int expectedDiv = 10;
-        int expectedMult = 50;
-        int expectedSub = 50;
+function test1Result() public view {
+    int expectedSun = 30;
+    int expectedDiv = 4;
+    int expectedMult = 20;
+    int expectedSub = 80;
 
-        int resSum = main.Sun(25,25);
-        int resDiv = main.Sun(50,5);
-        int resMult = main.Sun(10,5);
-        int resSub = main.Sun(100,50);
+    int resSum = main.testeSun();
+    int resDiv = main.testDiv();
+    int resMult = main.testeMult();
+    int resSub = main.testeSub();
 
-        assertEq(resSun, expectedSun, "A soma deve ser 50" );
-    }
+    assertEq(resSum, expectedSun);
+    assertEq(resDiv, expectedDiv); // ou "A divisão deve ser 10"
+    assertEq(resMult, expectedMult);
+    assertEq(resSub, expectedSub);
 }
+
+}
+
