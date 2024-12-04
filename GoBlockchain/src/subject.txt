@@ -5,9 +5,7 @@
  O contrato deve dar a cada uma das variaveis, respectivamente,
  as visibilidades de public, private, e internal. Os dados da pessoa deverao ser
  "Jeremias", para o nome, 10 para a idade, e true para a nacionalidade brasileira.
- ===================================================================================================
-
- 
+ ==================================================================================================================================
   Exercicio 02
   Desenvolva um smart contract que seja capaz de armazenar o nome,
   idade e nacionalidade de uma pessoa Brasileira em tres variaveis distintas.
@@ -20,7 +18,7 @@
   Utilizar o metodo constructor();
   Crie funcoes setter & getter p/ cada variavel;
   criar funcoes de manipulacao aritmetica.
- ===================================================================================================
+ ==================================================================================================================================
   Exercicio  03 
   Desenvolver um smart-contract que seja capaz de atribuir o estado
   escolar de um estudante a parti de sua nota. O estado deve ser inicializado
@@ -33,11 +31,19 @@
   II  - Caso contrario, se a nota for inferior a 7, o estado e "Reprovado"
   III - Um caso especial de quando a pessoa reprovou, é quando a nota e igual
          a 0, aqui, o estado nao e "Reprovado", mais sim "Zero"
- ===================================================================================================
+ ==================================================================================================================================
   Exercicio 04 
   Desenvolva um smart contract estitamente matematico que calcule o
   resultado do factorial de um numero N.
- ==================================09_01_ImportContract.sol permite registrar a nota de um estudante. 
+ ==================================================================================================================================
+  Exercício: 05
+  Crie um contrato chamado GradeBook que funcione como um registro de notas para estudantes. 
+  Ele deve permitir adicionar e acessar notas de cada estudante.
+
+  Requisitos:
+  Adicionar Notas:
+
+   - Crie uma função addGrade que permite registrar a nota de um estudante. 
      Cada estudante é identificado string.
    - Armazene as notas em um array para cada estudante.
    - Visualizar Notas:
@@ -49,7 +55,7 @@
    - Dicas:
    - Use um mapping para associar cada endereço a um array de notas.
    - Lembre-se de que os arrays em Solidity podem armazenar números inteiros, como uint.
- ===================================================================================================
+ ==================================================================================================================================
   Exercício 06
   Desenvolva um smart contract que simule uma "Petição" on-line.
   Seu contrato deve coletar ao menos 3 nomes; todavia, caso sejam adicionados mais nomes,
@@ -63,7 +69,7 @@
    O respectivo estado deve ser inicializado com
   a palavra "undefined".
   - outros estado "undefined", "signed", "pending"
- ===================================================================================================
+==================================================================================================================================
 Exercício 07
 Sistema de Gerenciamento de Pedidos
 Crie um contrato inteligente chamado OrderManager que gerencie pedidos de produtos. 
@@ -109,16 +115,18 @@ proprietário do contrato.
 
 Lembre-se de validar os dados de entrada, como verificar se a quantidade é maior que zero e se o 
 ID do pedido existe antes de atualizar ou recuperar informações.
-===================================================================================================
+==================================================================================================================================
 Exercicio 08
 Desenvolvar um smart contract que seja capaz de armazena um nome, idade, nacionalidade, notas, stados escolar  
 de uma pessoa brasileira.
-Os dados das pessoas deveran ser "" para o nome, 0 para idade, true para nacionalidade brasileira, 0 para notas e Udefine pra stado escolar.
+Os dados das pessoas deveran ser "" para o nome, 0 para idade, true para nacionalidade brasileira,
+0 para notas e Udefine pra stado escolar.
 O smart contract deve ser capaz, ainda de associar a pessoa, o estado da sua condicao escolar
 a saber : Aprovado , Reprovado, Zero ou Undefined.
-===================================================================================================
+==================================================================================================================================
 Exercicio 09
-Crie um contrato (I) com as funcoes aritimeticas, depois um outro arquivo-fonte.
-Crie uma biblioteca (II) que implemente as operacoes matematicas do contrato (I)
-Por fim crie um terceiro smart contract em um arquivo fonte distinto para que seja 
-possivel invocar as fucionalidades de cada um dos arquivos fontes, criado antes (I , II)
+Invoque um price feed da rede ChaiLink para realizar a leitura do preco do ETH em relacao ao USD.
+Para saber qual e o endereco do ultimo contrato publicado na rede Rinkeby, acesse htpps://docs.chain.link/docs/ethereum-addresses
+Sempre que uma nova leitura for feita no oraculo, deve-se emitir um evento
+
+==================================================================================================================================
