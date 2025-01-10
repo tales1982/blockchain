@@ -10,3 +10,6 @@
 [submodule "DIO/Tokem_padrao_erc20/lib/openzeppelin-contracts"]
 	path = DIO/Tokem_padrao_erc20/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "Prof_Pietro/WORKSPACES/lib/forge-std"]
+	path = Prof_Pietro/WORKSPACES/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
