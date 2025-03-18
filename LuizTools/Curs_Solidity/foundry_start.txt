@@ -1,0 +1,27 @@
+Para inicializar um projeto com o Foundry, siga os seguintes passos:
+
+Instalação do Foundry:
+Caso ainda não tenha o Foundry instalado, execute o comando abaixo no terminal:
+##############################################################################################################################################
+curl -L https://foundry.paradigm.xyz | bash
+Após a instalação, certifique-se de atualizar sua sessão (ou reinicie o terminal) e execute:
+
+##############################################################################################################################################
+foundryup
+Inicializando o Projeto:
+Navegue até o diretório onde deseja criar seu projeto e rode:
+
+##############################################################################################################################################
+forge init nome-do-projeto
+Esse comando criará uma estrutura padrão com os diretórios src, test, script e um arquivo de configuração foundry.toml.
+
+Verificando:
+Após a inicialização, entre no diretório do projeto e execute os testes para garantir que tudo esteja funcionando:
+
+##############################################################################################################################################
+cd nome-do-projeto
+forge test
+Esses passos configuram a base do seu projeto, permitindo que você comece a desenvolver e testar seus smart contracts 
+com a ferramenta Foundry. Se precisar de mais configurações ou personalizações, você pode editar o arquivo foundry.toml conforme necessário.
+
+01-BookDataBase
