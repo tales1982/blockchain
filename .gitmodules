@@ -16,3 +16,6 @@
 [submodule "LuizTools/Curs_Solidity/01-BookDataBase/lib/forge-std"]
 	path = LuizTools/Curs_Solidity/01-BookDataBase/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "LuizTools/Courso_solidity/lib/forge-std"]
+	path = LuizTools/Courso_solidity/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
