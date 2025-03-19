@@ -88,9 +88,9 @@ describe("ProtoCoin Test", function () {
 
   });
 
-  //////////////////////////////////////////////////////////////////
-  // Teste para verificar transferencia de 2 pessoa para 3 pessoa //
-  //////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////
+  // Teste para verificar transferencia de 2 pessoa para 3 pessoa ///
+  ///////////////////////////////////////////////////////////////////
   it("should transfer from", async function () {
     const { protoCoin, owner, otherAccount } = await loadFixture(deployFixture);
     const balanceOwnerBefore = await protoCoin.balanceOf(owner.address);
